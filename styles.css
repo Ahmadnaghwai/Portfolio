@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #444;
+  padding: 10px 0;
+  position: sticky;
+  top: 0; /* Makes the navigation bar sticky at the top */
+  z-index: 1000; /* Keeps it on top of other content */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 0;
+  background-color: white;
+  margin: 20px 0;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* Project Section */
+.project {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.project h3 {
+  font-size: 1.5em;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer p {
+  font-size: 1em;
+}
+.profile-img {
+
+    width: 40%;    /* Set the height of the image to match the width */
+ 
+}
