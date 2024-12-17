@@ -1,4 +1,5 @@
 /* Allgemeines Styling für die gesamte Seite */
+/* General page styling */
 body {
   background-color: #f4f4f9;
   font-family: Arial, sans-serif;
@@ -7,20 +8,18 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  box-sizing: border-box;
 }
 
-/* Styling für den App-Container */
-.todo-app {
+.app-container {
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 10px;
-  width: 90%;
   max-width: 900px;
+  width: 90%;
 }
 
-/* Styling für die Hauptüberschrift */
+/* Heading styling */
 h1 {
   text-align: center;
   font-size: 2rem;
@@ -28,8 +27,8 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Styling für das Formular */
-.todo-form {
+/* Form styling */
+form {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
@@ -37,17 +36,14 @@ h1 {
   height: 40px;
 }
 
-.todo-input {
+input[type="text"] {
   flex-grow: 1;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
 }
 
-.todo-button {
+button {
   background-color: #0078d7;
   color: #ffffff;
   font-weight: bold;
@@ -55,62 +51,45 @@ h1 {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 1rem;
   transition: background-color 0.3s;
 }
 
-.todo-button:hover {
+button:hover {
   background-color: #005bb5;
 }
 
-/* Styling für die Aufgabenliste */
-.todo-list {
+/* Task list styling */
+ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.todo-list li {
+li {
   display: flex;
   gap: 10px;
   background-color: #f9f9f9;
-  padding: 10px;
   border-radius: 5px;
+  padding: 10px;
   margin-bottom: 10px;
-  align-items: center;
 }
 
-.todo-list input[type="checkbox"] {
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.todo-list span {
-  font-size: 1rem;
-  flex-grow: 1;
-}
-
-.todo-list button {
+li.completed {
+  text-decoration: line-through;
   background-color: #d9534f;
   color: #ffffff;
+}
+
+li button {
+  background-color: #c9302c;
+  color: #ffffff;
+  padding: 5px 10px;
   border: none;
   border-radius: 5px;
-  padding: 5px 10px;
   cursor: pointer;
-  font-size: 0.9rem;
-  transition: background-color 0.3s;
 }
 
-.todo-list button:hover {
-  background-color: #c9302c;
-}
-
-.todo-list input[type="checkbox"]:checked + span {
-  text-decoration: line-through;
-}
-
-/* Styling für den Infobereich */
-.todo-info {
+/* Info text */
+#info-text {
   text-align: center;
   font-size: 0.9rem;
   color: #666666;
